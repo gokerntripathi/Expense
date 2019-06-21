@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Transaction" max_length="40" name="x_365037_expense_m_transaction_history" type="collection">
+        <element choice="3" default="Others" label="Category" max_length="20" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Birthday Celebration" value="Birthday"/>
+                <element inactive_on_update="false" label="Gift" value="Gift"/>
+                <element inactive_on_update="false" label="Others" value="Others"/>
+                <element inactive_on_update="false" label="Outing" value="Outing"/>
+            </choice>
+        </element>
+        <element label="Remarks" max_length="100" name="comment" type="string"/>
+        <element label="Paid By" max_length="40" name="from_user" reference="sys_user" type="reference"/>
+        <element label="Paid for Group" max_length="40" name="group_paid" type="boolean"/>
+        <element label="Pay To Group" max_length="40" name="group_pay" type="boolean"/>
+        <element choice="1" default="NONE" label="Status" max_length="10" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="Approved"/>
+                <element inactive_on_update="false" label="Pending For approval" value="Pending"/>
+                <element inactive_on_update="false" label="Rejected" value="Rejected"/>
+            </choice>
+        </element>
+        <element label="Paid To" max_length="40" name="to_user" reference="sys_user" type="reference"/>
+        <element label="Amount" max_length="15" name="u_decimal_2" type="decimal"/>
+        <element label="Receipt" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
+    </element>
+</database>

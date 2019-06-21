@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_365037_expense_m_transaction_history" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>x_365037_expense_m_transaction_history</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-20 06:06:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68b72cd7db023300e70758b3ca9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-20 06:06:46</sys_updated_on>
+            <value>Approved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending For approval</label>
+            <language>en</language>
+            <name>x_365037_expense_m_transaction_history</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-20 06:07:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17c7a8d7db023300e70758b3ca961985</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-20 06:07:23</sys_updated_on>
+            <value>Pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected</label>
+            <language>en</language>
+            <name>x_365037_expense_m_transaction_history</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-20 06:06:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6597e8d7db023300e70758b3ca9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-20 06:06:23</sys_updated_on>
+            <value>Rejected</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_365037_expense_m_transaction_history</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-20 06:06:23</sys_created_on>
+            <sys_id>4ea7e413db023300e70758b3ca961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+            <sys_update_name>sys_choice_x_365037_expense_m_transaction_history_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-20 06:06:23</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
