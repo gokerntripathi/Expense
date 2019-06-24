@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-24 07:12:18</sys_created_on>
+        <sys_id>e61d1de0dbd67300e70758b3ca961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_365037_expense_m_personal_transactions_data.x_365037_expense_m.personal_transactions_data_user</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_security_acl display_value="x_365037_expense_m_personal_transactions_data">2e1d1de0dbd67300e70758b3ca961921</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e61d1de0dbd67300e70758b3ca961924</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-24 07:12:18</sys_updated_on>
+        <sys_user_role display_value="x_365037_expense_m.personal_transactions_data_user" name="x_365037_expense_m.personal_transactions_data_user">d61dd1e0dbd67300e70758b3ca961920</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

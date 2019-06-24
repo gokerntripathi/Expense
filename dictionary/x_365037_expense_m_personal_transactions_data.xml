@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Personal Transactions Data" max_length="40" name="x_365037_expense_m_personal_transactions_data" type="collection">
+        <element default="0" label="Amount" max_length="20" name="amount" type="decimal"/>
+        <element label="Paid By" max_length="32" name="paid_by" type="string"/>
+        <element label="Paid To" max_length="32" name="paid_to" type="string"/>
+        <index name="index">
+            <element name="paid_to"/>
+        </index>
+        <index name="index2">
+            <element name="paid_by"/>
+        </index>
+    </element>
+</database>

@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments>Approving the transaction</comments>
-        <condition>(current.status=='Pending' &amp;&amp; (current.to_user==gs.getUserID() || ((current.group_pay==true || current.group_paid==true) &amp;&amp; gs.hasRole("admin")) ) )</condition>
+        <condition>((current.status=='Pending' )&amp;&amp; (current.to_user==gs.getUserName() || ((current.group_pay==true || current.group_paid==true) &amp;&amp;gs.hasRole("x_365037_expense_m.Expense Admin Role")) ) )</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -28,17 +28,24 @@
         <name>Approve</name>
         <onclick>approve()</onclick>
         <order>100</order>
-        <script><![CDATA[//|| gs.hasRole("admin")
+        <script><![CDATA[// ((current.status=='Pending' )&& (current.to_user==gs.getUserName() || ((current.group_pay==true || current.group_paid==true) &&gs.hasRole("x_365037_expense_m.Expense Admin Role")) ) )
 current.status='Approved';
 
+gs.info(current.to_user+' line 4');
+gs.info(current.to_user.user_name +' line 5');
+gs.info("-----");
+var fromuser=current.from_user.user_name;
+
+var toUser=current.to_user.user_name;
 if(current.group_pay==true){
 	gr = new GlideRecord('x_365037_expense_m_user_balance');
-	gr.addQuery('user_id', current.from_user);
+	gr.addQuery('user_name', fromuser);
 	gr.query();
 	if(gr.hasNext()){
 		gr.next();
+		var formAmount=current.u_decimal_2;
 		var amount=gr.getValue('balance_amount');
-		amount=amount+current.u_decimal_2;
+		amount=parseFloat(amount)+parseFloat(formAmount);
 		gr.setValue('balance_amount',amount);
 		gr.update();
 	}
@@ -48,48 +55,102 @@ if(current.group_pay==true){
 	var formAmount=current.u_decimal_2;
 	var count = gr.getRowCount();
 	while(gr.hasNext()){
+		gr.next();
 		var amount=gr.getValue('balance_amount');
 		amount=amount-formAmount/count;
 		gr.setValue('balance_amount',amount);
 		gr.update();
 	}
 	
-	if(current.from_user==gs.getUserID() &&  gs.hasRole("admin")){
+	if(current.from_user==gs.getUserID() &&  gs.hasRole("x_365037_expense_m.Expense Admin Role")){
 		
 	}else{
 		gr = new GlideRecord('x_365037_expense_m_user_balance');
-		gr.addQuery('user_id', current.from_user);
+		gr.addQuery('user_name', fromuser);
 		gr.query();
 		if(gr.hasNext()){
 			gr.next();
+			var formAmount=current.u_decimal_2;
 			var amount=gr.getValue('balance_amount');
-			amount=amount+current.u_decimal_2;
+			amount=parseFloat(amount)+parseFloat(formAmount);
 			gr.setValue('balance_amount',amount);
 			gr.update();
 		}
 	}
 }else{
 	var gr = new GlideRecord('x_365037_expense_m_user_balance');
-	gr.addQuery('user_id', current.to_user);
+	gr.addQuery('user_name', toUser);
 	gr.query();
 	if(gr.hasNext()){
 		gr.next();
 		var amount=gr.getValue('balance_amount');
-		amount=amount-current.u_decimal_2;
+		var formAmount=current.u_decimal_2;
+		amount=amount-formAmount;
 		gr.setValue('balance_amount',amount);
 		gr.update();
 	}
 
 	gr = new GlideRecord('x_365037_expense_m_user_balance');
-	gr.addQuery('user_id', current.from_user);
+	gr.addQuery('user_name', fromuser);
 	gr.query();
 	if(gr.hasNext()){
 		gr.next();
 		var amount=gr.getValue('balance_amount');
-		amount=amount+current.u_decimal_2;
+		var formAmount=current.u_decimal_2;
+		amount=parseFloat(amount)+parseFloat(formAmount);
 		gr.setValue('balance_amount',amount);
 		gr.update();
 	}
+	
+	var gp = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+	gp.addQuery('paid_by', fromuser);
+	gp.addQuery('paid_to',toUser);
+	gs.info(fromuser + '  '+ toUser+' line 78');
+	gp.query();
+	if(gp.hasNext()){
+		gp.next();
+		var amount=gp.getValue('amount');
+		var formAmount=current.u_decimal_2;
+		amount=parseFloat(amount)+parseFloat(formAmount);
+		gp.setValue('amount',amount);
+		gp.update();
+	}else{
+		var gr = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+		gr.initialize();
+		var formAmount=current.u_decimal_2;
+		gs.info(formAmount+ '  line 91');
+		gs.info(current.to_user + '  '+ current.from_user+' line 92');
+		gr.setValue('paid_to',toUser);
+		gr.setValue('paid_by',fromuser);
+		gr.setValue('amount',formAmount);
+		gr.insert();
+	}
+	
+	var gp = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+	gp.addQuery('paid_by',toUser);
+	gp.addQuery('paid_to',fromuser);
+	gp.query();
+	if(gp.hasNext()){
+		gp.next();
+		var amount=gp.getValue('amount');
+		var formAmount=current.u_decimal_2;
+		amount=amount-formAmount;
+		gp.setValue('amount',amount);
+		gp.update();
+	}else{
+		var gr = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+		gr.initialize();
+		var formAmount=current.u_decimal_2 * -1;
+		gs.info(formAmount+ '  line 114');
+		gs.info(current.to_user + '  '+ current.from_user+' line 113');
+		gr.setValue('paid_to',fromuser);
+		gr.setValue('paid_by',toUser);
+		gr.setValue('amount',formAmount);
+		gr.insert();
+	}
+	
+	
+	
 }
 
 
@@ -104,7 +165,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1808a9d3dbc23300e70758b3ca961951</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -112,7 +173,7 @@ current.update();]]></script>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_ui_action_1808a9d3dbc23300e70758b3ca961951</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-21 09:29:47</sys_updated_on>
+        <sys_updated_on>2019-06-24 12:25:06</sys_updated_on>
         <table>x_365037_expense_m_transaction_history</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

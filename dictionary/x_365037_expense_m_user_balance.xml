@@ -3,7 +3,15 @@
         <element default="0" label="Balance Amount" mandatory="true" max_length="20" name="balance_amount" type="decimal"/>
         <element label="DOB" mandatory="true" max_length="40" name="dob" type="glide_date"/>
         <element label="Email" max_length="50" name="email" type="string"/>
-        <element label="User Id" mandatory="true" max_length="10" name="user_id" reference="sys_user" type="reference"/>
-        <element label="User Name" max_length="50" name="user_name" type="string"/>
+        <element choice="3" label="isAdmin" max_length="50" name="isadmin" type="choice">
+            <choice>
+                <element inactive_on_update="false"/>
+                <element inactive_on_update="false" label="true" value="true"/>
+            </choice>
+        </element>
+        <element display="true" label="User Name" max_length="50" name="user_name" type="string"/>
+        <index name="index">
+            <element name="user_name"/>
+        </index>
     </element>
 </database>

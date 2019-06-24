@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Expense Catalog Home">c2c5956cdb967300e70758b3ca96196a</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-24 06:40:39</sys_created_on>
+        <sys_id>87d5d56cdb967300e70758b3ca961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expense Catalog Home.catalog_expense_catalog_home</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_expense_catalog_home">b6d5d56cdb967300e70758b3ca961916</sys_portal_page>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_87d5d56cdb967300e70758b3ca961917</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-24 06:40:39</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>
