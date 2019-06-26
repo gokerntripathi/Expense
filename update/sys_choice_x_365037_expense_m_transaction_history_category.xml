@@ -43,6 +43,25 @@
             <element>category</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Group Contribution</label>
+            <language>en</language>
+            <name>x_365037_expense_m_transaction_history</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-26 05:30:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8de8538ddb5e3300e70758b3ca9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-26 05:30:20</sys_updated_on>
+            <value>Group Contribution</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Others</label>
             <language>en</language>
             <name>x_365037_expense_m_transaction_history</name>
@@ -75,6 +94,25 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2019-06-20 08:35:30</sys_updated_on>
             <value>Outing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Personal</label>
+            <language>en</language>
+            <name>x_365037_expense_m_transaction_history</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-25 05:07:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05f94a74db123300e70758b3ca9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-25 05:07:03</sys_updated_on>
+            <value>Personal</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>category</element>

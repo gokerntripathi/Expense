@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Expense Homepage">d4ee5b7cdbd23300e70758b3ca9619f1</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>2</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-25 16:33:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e27e849db963300e70758b3ca9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d4ee5b7cdbd23300e70758b3ca9619f1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_5e27e849db963300e70758b3ca9619f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-25 16:33:35</sys_updated_on>
+        <tab display_value="Expense Home Page">5627e849db963300e70758b3ca9619f4</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

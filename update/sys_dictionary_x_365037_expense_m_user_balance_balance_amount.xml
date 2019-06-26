@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Balance Amount</column_label>
+        <column_label>Total Amount</column_label>
         <comments/>
         <create_roles/>
         <default_value>0</default_value>
@@ -54,14 +54,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-19 12:28:23</sys_created_on>
         <sys_id>2ea4f8cfdb023300e70758b3ca961951</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Balance Amount</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Total Amount</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_dictionary_x_365037_expense_m_user_balance_balance_amount</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-19 12:28:23</sys_updated_on>
+        <sys_updated_on>2019-06-25 10:31:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

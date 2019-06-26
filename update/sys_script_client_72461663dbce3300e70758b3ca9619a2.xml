@@ -21,6 +21,14 @@
 		g_form.setReadOnly('to_user',false);
 		g_form.setReadOnly('group_pay',false);
 	 }
+	
+	if(g_form.getValue('group_paid')=='false' && g_form.getValue('group_pay')=='false'){
+			g_form.setValue('category','Personal');
+			g_form.setReadOnly('category',true);
+	}else{
+		g_form.setValue('category','Others');
+		g_form.setReadOnly('category',false);
+	}
    //Type appropriate comment here, and begin script below
    
 }]]></script>
@@ -30,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>72461663dbce3300e70758b3ca9619a2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Update Paid by field property</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -38,7 +46,7 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_script_client_72461663dbce3300e70758b3ca9619a2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-24 12:42:00</sys_updated_on>
+        <sys_updated_on>2019-06-25 05:14:55</sys_updated_on>
         <table>x_365037_expense_m_transaction_history</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
