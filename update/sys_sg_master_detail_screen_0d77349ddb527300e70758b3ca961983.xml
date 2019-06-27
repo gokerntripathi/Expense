@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_detail_screen">
+    <sys_sg_master_detail_screen action="INSERT_OR_UPDATE">
+        <application_roles>x_365037_expense_m.Expense Admin Role,x_365037_expense_m.expense_user_user,x_365037_expense_m.personal_transactions_data_user,x_365037_expense_m.transaction_history_user,x_365037_expense_m.user_balance_user</application_roles>
+        <available_offline>false</available_offline>
+        <data_item display_value="User Balance">fd853cd9db527300e70758b3ca961942</data_item>
+        <description>Applet to manage user balance</description>
+        <fetch_type>not_required</fetch_type>
+        <hidden>false</hidden>
+        <icon display_value="file-alt">ac77b09ddb527300e70758b3ca9619da</icon>
+        <name>User Balance Applet</name>
+        <order>10</order>
+        <parent>1484f451db127300e70758b3ca9619d2</parent>
+        <parent_table>sys_sg_folder</parent_table>
+        <roles_override/>
+        <sys_class_name>sys_sg_master_detail_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-26 12:23:16</sys_created_on>
+        <sys_id>0d77349ddb527300e70758b3ca961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Balance Applet</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_master_detail_screen_0d77349ddb527300e70758b3ca961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-26 12:23:16</sys_updated_on>
+    </sys_sg_master_detail_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=0d77349ddb527300e70758b3ca961983"/>
+</record_update>

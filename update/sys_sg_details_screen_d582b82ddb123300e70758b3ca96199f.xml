@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_details_screen">
+    <sys_sg_details_screen action="INSERT_OR_UPDATE">
+        <application_roles>x_365037_expense_m.Expense Admin Role,x_365037_expense_m.expense_user_user,x_365037_expense_m.personal_transactions_data_user,x_365037_expense_m.transaction_history_user,x_365037_expense_m.user_balance_user</application_roles>
+        <available_offline>false</available_offline>
+        <data_item display_value="Transactions Data Item">a0a170e9db123300e70758b3ca9619ee</data_item>
+        <description>Transactions</description>
+        <fetch_type>not_required</fetch_type>
+        <hidden>false</hidden>
+        <icon display_value="file-alt">9882382ddb123300e70758b3ca9619ab</icon>
+        <item_view display_value="Transactions detail item view">b482b42ddb123300e70758b3ca9619a6</item_view>
+        <name>Details</name>
+        <order>10</order>
+        <parent>0d82b82ddb123300e70758b3ca961937</parent>
+        <parent_table>sys_sg_master_item</parent_table>
+        <roles_override/>
+        <sys_class_name>sys_sg_details_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-27 06:40:11</sys_created_on>
+        <sys_id>d582b82ddb123300e70758b3ca96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Details</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_details_screen_d582b82ddb123300e70758b3ca96199f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-27 06:40:11</sys_updated_on>
+    </sys_sg_details_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=d582b82ddb123300e70758b3ca96199f"/>
+</record_update>

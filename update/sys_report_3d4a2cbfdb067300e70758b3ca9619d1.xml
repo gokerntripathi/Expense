@@ -57,7 +57,7 @@
         <interval>year</interval>
         <is_published>false</is_published>
         <is_real_time>false</is_real_time>
-        <is_scheduled>true</is_scheduled>
+        <is_scheduled>false</is_scheduled>
         <legend_align_columns>true</legend_align_columns>
         <legend_background_color/>
         <legend_border_color/>
@@ -106,14 +106,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-21 19:34:49</sys_created_on>
         <sys_id>3d4a2cbfdb067300e70758b3ca9619d1</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Group Expense Category Report</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_report_3d4a2cbfdb067300e70758b3ca9619d1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-26 06:27:37</sys_updated_on>
+        <sys_updated_on>2019-06-26 10:42:50</sys_updated_on>
         <table>x_365037_expense_m_transaction_history</table>
         <title>Group Expense Category Report</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

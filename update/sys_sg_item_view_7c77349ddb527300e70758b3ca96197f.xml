@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item display_value="User Balance">fd853cd9db527300e70758b3ca961942</data_item>
+        <dependency_fields/>
+        <item_view_json/>
+        <name>User Balance Applet detail item view</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-26 12:23:15</sys_created_on>
+        <sys_id>7c77349ddb527300e70758b3ca96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Balance Applet detail item view</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_item_view_7c77349ddb527300e70758b3ca96197f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-26 12:23:15</sys_updated_on>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=7c77349ddb527300e70758b3ca96197f"/>
+</record_update>
