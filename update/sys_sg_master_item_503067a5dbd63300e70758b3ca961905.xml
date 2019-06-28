@@ -2,21 +2,21 @@
     <sys_sg_master_item action="INSERT_OR_UPDATE">
         <condition/>
         <condition_order/>
-        <item_view display_value="User Balance Applet item view">fc777c5ddb527300e70758b3ca961918</item_view>
+        <item_view display_value="User Balance item view">372027a5dbd63300e70758b3ca9619fb</item_view>
         <name>Master Item</name>
-        <screen display_value="User Balance Applet">0d77349ddb527300e70758b3ca961983</screen>
+        <screen display_value="User Balance">0030e3a5dbd63300e70758b3ca96193f</screen>
         <sys_class_name>sys_sg_master_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-26 12:23:16</sys_created_on>
-        <sys_id>1d77b09ddb527300e70758b3ca9619dd</sys_id>
+        <sys_created_on>2019-06-27 19:18:58</sys_created_on>
+        <sys_id>503067a5dbd63300e70758b3ca961905</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Master Item</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
-        <sys_update_name>sys_sg_master_item_1d77b09ddb527300e70758b3ca9619dd</sys_update_name>
+        <sys_update_name>sys_sg_master_item_503067a5dbd63300e70758b3ca961905</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-26 12:23:16</sys_updated_on>
+        <sys_updated_on>2019-06-27 19:18:58</sys_updated_on>
         <table>x_365037_expense_m_user_balance</table>
     </sys_sg_master_item>
 </record_update>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_activity_stream_screen">
+    <sys_sg_activity_stream_screen action="INSERT_OR_UPDATE">
+        <add_additional_comment_button>true</add_additional_comment_button>
+        <add_attachment_button>true</add_attachment_button>
+        <add_work_note_button>true</add_work_note_button>
+        <application_roles>x_365037_expense_m.Expense Admin Role,x_365037_expense_m.expense_user_user,x_365037_expense_m.personal_transactions_data_user,x_365037_expense_m.transaction_history_user,x_365037_expense_m.user_balance_user</application_roles>
+        <available_offline>false</available_offline>
+        <data_item display_value="User Balance">fd853cd9db527300e70758b3ca961942</data_item>
+        <description/>
+        <fetch_type>background</fetch_type>
+        <hidden>false</hidden>
+        <icon/>
+        <name>Activity Stream</name>
+        <order>20</order>
+        <parent>503067a5dbd63300e70758b3ca961905</parent>
+        <parent_table>sys_sg_master_item</parent_table>
+        <roles_override/>
+        <sys_class_name>sys_sg_activity_stream_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-27 19:18:59</sys_created_on>
+        <sys_id>1030e3a5dbd63300e70758b3ca961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity Stream</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_activity_stream_screen_1030e3a5dbd63300e70758b3ca961945</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-27 19:18:59</sys_updated_on>
+    </sys_sg_activity_stream_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=1030e3a5dbd63300e70758b3ca961945"/>
+</record_update>

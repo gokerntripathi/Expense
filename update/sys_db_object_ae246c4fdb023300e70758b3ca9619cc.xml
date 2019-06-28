@@ -5,9 +5,9 @@
         <alter_access>false</alter_access>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>false</create_access>
+        <create_access>true</create_access>
         <create_access_controls>true</create_access_controls>
-        <delete_access>false</delete_access>
+        <delete_access>true</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
         <label>User Balance</label>
@@ -23,15 +23,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-19 12:22:53</sys_created_on>
         <sys_id>ae246c4fdb023300e70758b3ca9619cc</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>User Balance</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_db_object_ae246c4fdb023300e70758b3ca9619cc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-19 12:41:39</sys_updated_on>
-        <update_access>false</update_access>
+        <sys_updated_on>2019-06-28 10:41:29</sys_updated_on>
+        <update_access>true</update_access>
         <user_role display_value="x_365037_expense_m.user_balance_user" name="x_365037_expense_m.user_balance_user">1b3478c7db423300e70758b3ca9619a2</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>

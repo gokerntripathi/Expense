@@ -6,7 +6,7 @@
         <description>Personal transactions Applet</description>
         <fetch_type>not_required</fetch_type>
         <hidden>false</hidden>
-        <icon display_value="file-alt">ad447c6ddb123300e70758b3ca96195d</icon>
+        <icon display_value="user">ad447c6ddb123300e70758b3ca96195d</icon>
         <item_view display_value="Personal Transactions detail item view">f1443c6ddb123300e70758b3ca96199a</item_view>
         <name>Details</name>
         <order>10</order>

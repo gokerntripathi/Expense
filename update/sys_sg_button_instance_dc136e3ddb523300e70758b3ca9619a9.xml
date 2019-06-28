@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Approve">fb02623ddb523300e70758b3ca961915</button>
+        <description/>
+        <field_name/>
+        <label>Approve</label>
+        <location>top</location>
+        <name>Approve</name>
+        <order>1</order>
+        <parent>19e16ef9db523300e70758b3ca9619a5</parent>
+        <parent_table>sys_sg_details_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-28 09:30:24</sys_created_on>
+        <sys_id>dc136e3ddb523300e70758b3ca9619a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_button_instance_dc136e3ddb523300e70758b3ca9619a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-28 09:30:24</sys_updated_on>
+        <table/>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc136e3ddb523300e70758b3ca9619a9"/>
+</record_update>

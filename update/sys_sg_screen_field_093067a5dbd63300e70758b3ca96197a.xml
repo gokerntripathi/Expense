@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="INSERT_OR_UPDATE">
+        <data_item_field_name>isadmin</data_item_field_name>
+        <hidden>false</hidden>
+        <order>40</order>
+        <screen display_value="Details">b43067a5dbd63300e70758b3ca961927</screen>
+        <screen_data_item_table>x_365037_expense_m_user_balance</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-27 19:19:01</sys_created_on>
+        <sys_id>093067a5dbd63300e70758b3ca96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>isadmin</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_screen_field_093067a5dbd63300e70758b3ca96197a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-27 19:19:01</sys_updated_on>
+        <type>auto</type>
+    </sys_sg_screen_field>
+</record_update>

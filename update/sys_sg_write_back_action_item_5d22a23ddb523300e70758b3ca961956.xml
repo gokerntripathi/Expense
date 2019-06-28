@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+    //Type appropriate comment here, and begin script below
+	gt = new GlideRecord('x_365037_expense_m_transaction_history');
+	gt.addQuery('sys_id',input.sys_id);
+	gt.query();
+	var fromuser1;
+	var toUser1;
+	var group_pay;
+	var group_paid;
+	var formAmount;
+	if(gt.hasNext()){
+		gt.next();
+		 fromuser1=gt.getElement('from_user');
+		 toUser1=gt.getElement('to_user');
+		 group_pay=gt.getElement('group_pay');
+		group_paid=gt.getElement('group_paid');
+		formAmount=gt.getElement('u_decimal_2');
+	}
+	var fromuser=fromuser1.user_name;
+	var toUser= toUser1.user_name;
+	gs.info('before group pay' + fromuser + '   '+toUser);
+	if(group_pay==true){
+	gr = new GlideRecord('x_365037_expense_m_user_balance');
+	gr.addQuery('user_name', fromuser);
+	gr.query();
+		gs.info('in group pay');
+	if(gr.hasNext()){
+		gr.next();
+		gs.info('in group pay if condition -- user found in user balance table');
+		//update total amount field
+        //var formAmount=current.u_decimal_2;
+        var amount=gr.getValue('balance_amount');
+        amount=parseFloat(amount)+parseFloat(formAmount);
+        gr.setValue('balance_amount',amount);
+        
+        //update group amount field
+        var groupAmount = gr.getValue('group_amount');
+        groupAmount = parseFloat(groupAmount)+parseFloat(formAmount);
+        gr.setValue('group_amount', groupAmount);
+		
+		gr.update();
+	}
+}else if(group_paid==true){
+	var gr = new GlideRecord('x_365037_expense_m_user_balance');
+	gr.query();
+	//var formAmount=current.u_decimal_2;
+	gs.info('in group paid');
+	var count = gr.getRowCount();
+	while(gr.hasNext()){
+		gr.next();
+        
+        //update total amount field.
+        var amount=gr.getValue('balance_amount');
+        amount=amount-formAmount/count;
+        gr.setValue('balance_amount',amount);
+        
+        //update group amount field.
+         var groupAmount = gr.getValue('group_amount');
+        groupAmount = groupAmount - (formAmount/count);
+        gr.setValue('group_amount', groupAmount);
+        
+        gr.update();
+	}
+	var v= gs.getUserName();
+	if(fromuser==gs.getUserName() &&  gs.hasRole("x_365037_expense_m.Expense Admin Role")){
+		
+	}else{
+		gr = new GlideRecord('x_365037_expense_m_user_balance');
+		gr.addQuery('user_name', fromuser);
+		gr.query();
+		if(gr.hasNext()){
+			gr.next();
+            
+            //update total amount field
+           // var formAmount=current.u_decimal_2;
+            var amount=gr.getValue('balance_amount');
+            amount=parseFloat(amount)+parseFloat(formAmount);
+            gr.setValue('balance_amount',amount);
+            
+            //update group amount field
+            var groupAmount = gr.getValue('group_amount');
+            groupAmount = parseFloat(groupAmount)+parseFloat(formAmount);
+            gr.setValue('group_amount', groupAmount);
+            
+            gr.update();
+		}
+	}
+}else{
+	gs.info('in final else');
+	var gr = new GlideRecord('x_365037_expense_m_user_balance');
+	gr.addQuery('user_name', toUser);
+	gr.query();
+	if(gr.hasNext()){
+		gr.next();
+		var amount=gr.getValue('balance_amount');
+		//var formAmount=current.u_decimal_2;
+		amount=amount-formAmount;
+		gr.setValue('balance_amount',amount);
+		gr.update();
+	}
+
+	gr = new GlideRecord('x_365037_expense_m_user_balance');
+	gr.addQuery('user_name', fromuser);
+	gr.query();
+	if(gr.hasNext()){
+		gr.next();
+		var amount=gr.getValue('balance_amount');
+		//var formAmount=current.u_decimal_2;
+		amount=parseFloat(amount)+parseFloat(formAmount);
+		gr.setValue('balance_amount',amount);
+		gr.update();
+	}
+	
+	var gp = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+	gp.addQuery('paid_by', fromuser);
+	gp.addQuery('paid_to',toUser);
+	gs.info(fromuser + '  '+ toUser+' line 78');
+	gp.query();
+	if(gp.hasNext()){
+		gp.next();
+		var amount=gp.getValue('amount');
+		//var formAmount=current.u_decimal_2;
+		amount=parseFloat(amount)+parseFloat(formAmount);
+		gp.setValue('amount',amount);
+		gp.update();
+	}else{
+		var gr = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+		gr.initialize();
+		//var formAmount=current.u_decimal_2;
+		gs.info(formAmount+ '  line 91');
+		//gs.info(current.to_user + '  '+ current.from_user+' line 92');
+		gr.setValue('paid_to',toUser);
+		gr.setValue('paid_by',fromuser);
+		gr.setValue('amount',formAmount);
+		gr.insert();
+	}
+	
+	var gp = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+	gp.addQuery('paid_by',toUser);
+	gp.addQuery('paid_to',fromuser);
+	gp.query();
+	if(gp.hasNext()){
+		gp.next();
+		var amount=gp.getValue('amount');
+		//var formAmount=current.u_decimal_2;
+		amount=amount-formAmount;
+		gp.setValue('amount',amount);
+		gp.update();
+	}else{
+		var gr = new GlideRecord('x_365037_expense_m_personal_transactions_data');
+		gr.initialize();
+		//var formAmount=current.u_decimal_2 * -1;
+		//gs.info(formAmount+ '  line 114');
+		//gs.info(current.to_user + '  '+ current.from_user+' line 113');
+		gr.setValue('paid_to',fromuser);
+		gr.setValue('paid_by',toUser);
+		gr.setValue('amount',formAmount);
+		gr.insert();
+	}
+	
+	
+	
+}
+gt.setValue('status','Approved');
+
+gt.update();
+	
+	
+	
+})(input);]]></execution_script>
+        <name>Approve AI</name>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-28 09:28:10</sys_created_on>
+        <sys_id>5d22a23ddb523300e70758b3ca961956</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Approve AI</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_5d22a23ddb523300e70758b3ca961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-28 12:30:42</sys_updated_on>
+        <table>x_365037_expense_m_transaction_history</table>
+        <template>status=Approved^EQ</template>
+        <type>script</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=5d22a23ddb523300e70758b3ca961956"/>
+</record_update>

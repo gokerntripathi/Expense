@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>Approval List Data source (Transaction)</display>
+        <filter table="x_365037_expense_m_transaction_history">status=Pending^to_userLIKEjavascript:gs.getUserName()^NQstatus=Pending^commentLIKEjavascript:gs.getUserName()^group_pay=true^ORgroup_paid=true<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Pending"/>
+            <item endquery="false" field="to_user" goto="false" newquery="false" operator="LIKE" or="false" value="javascript:gs.getUserName()"/>
+            <item endquery="false" field="status" goto="false" newquery="true" operator="=" or="false" value="Pending"/>
+            <item endquery="false" field="comment" goto="false" newquery="false" operator="LIKE" or="false" value="javascript:gs.getUserName()"/>
+            <item endquery="false" field="group_pay" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="group_paid" goto="false" newquery="false" operator="=" or="true" value="true"/>
+        </filter>
+        <name>Approval List Data source</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-27 10:33:17</sys_created_on>
+        <sys_id>5ac729addb923300e70758b3ca9619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval List Data source (Transaction)</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_report_source_5ac729addb923300e70758b3ca9619d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-27 10:33:17</sys_updated_on>
+        <table>x_365037_expense_m_transaction_history</table>
+    </sys_report_source>
+</record_update>
