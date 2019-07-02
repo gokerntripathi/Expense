@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Transaction Balance" max_length="40" name="x_365037_expense_m_transaction_balance" type="collection">
+        <element default="0" label="Credit Amount" mandatory="true" max_length="40" name="credit_amount" type="longint"/>
+        <element default="0" label="Debit Amount" mandatory="true" max_length="20" name="debit_amount" type="decimal"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Transaction ID" max_length="40" name="number" type="string"/>
+        <element label="Paid By" max_length="32" name="paid_by" reference="x_365037_expense_m_user_balance" reference_qual="isactive=true^EQ" reference_qual_condition="isactive=true^EQ" type="reference"/>
+        <element label="Reference TRX" max_length="50" name="reference_trx" type="string"/>
+        <element label="Transaction Date" max_length="40" name="transaction_date" type="glide_date_time"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Split Into" max_length="1024" name="u_glide_list_7" reference="x_365037_expense_m_user_balance" type="glide_list"/>
+        <element attributes="base_start=true" default="x_365037_expense_m_user_balance" label="New Table Name" max_length="80" name="u_table_name_5" type="table_name"/>
+        <index name="index">
+            <element name="paid_by"/>
+        </index>
+    </element>
+</database>

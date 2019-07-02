@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_data_item">
+    <sys_sg_data_item action="INSERT_OR_UPDATE">
+        <condition_type>declarative</condition_type>
+        <description/>
+        <group_by/>
+        <name>My Requests DI</name>
+        <query_condition table="x_365037_expense_m_transaction_history">status=Pending^from_user.user_nameLIKEjavascript:gs.getUserName()<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Pending"/>
+            <item endquery="false" field="from_user.user_name" goto="false" newquery="false" operator="LIKE" or="false" value="javascript:gs.getUserName()"/>
+        </query_condition>
+        <query_condition_script/>
+        <sys_class_name>sys_sg_data_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-29 18:24:54</sys_created_on>
+        <sys_id>e3f669dadb927300e70758b3ca961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Requests DI</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_sg_data_item_e3f669dadb927300e70758b3ca961934</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-29 18:24:54</sys_updated_on>
+        <table>x_365037_expense_m_transaction_history</table>
+    </sys_sg_data_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3f669dadb927300e70758b3ca961934"/>
+</record_update>

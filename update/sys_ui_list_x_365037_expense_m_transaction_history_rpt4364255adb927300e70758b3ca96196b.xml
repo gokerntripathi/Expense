@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_365037_expense_m_transaction_history" version="2" view="RPT4364255adb927300e70758b3ca96196b">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>from_user</element>
+            <list_id display_value="x_365037_expense_m_transaction_history" element="NULL" name="x_365037_expense_m_transaction_history" parent="NULL" relationship="NULL" sys_domain="global" view="0364255adb927300e70758b3ca961971">2ef5a59adb927300e70758b3ca961971</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-29 18:20:27</sys_created_on>
+            <sys_id>26f5a99adb927300e70758b3ca9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-29 18:20:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>to_user</element>
+            <list_id display_value="x_365037_expense_m_transaction_history" element="NULL" name="x_365037_expense_m_transaction_history" parent="NULL" relationship="NULL" sys_domain="global" view="0364255adb927300e70758b3ca961971">2ef5a59adb927300e70758b3ca961971</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-29 18:20:27</sys_created_on>
+            <sys_id>a6f5a99adb927300e70758b3ca9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-29 18:20:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_decimal_2</element>
+            <list_id display_value="x_365037_expense_m_transaction_history" element="NULL" name="x_365037_expense_m_transaction_history" parent="NULL" relationship="NULL" sys_domain="global" view="0364255adb927300e70758b3ca961971">2ef5a59adb927300e70758b3ca961971</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-29 18:20:27</sys_created_on>
+            <sys_id>2af5a99adb927300e70758b3ca9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-29 18:20:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="x_365037_expense_m_transaction_history" element="NULL" name="x_365037_expense_m_transaction_history" parent="NULL" relationship="NULL" sys_domain="global" view="0364255adb927300e70758b3ca961971">2ef5a59adb927300e70758b3ca961971</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-29 18:20:27</sys_created_on>
+            <sys_id>aaf5a99adb927300e70758b3ca9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-29 18:20:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="x_365037_expense_m_transaction_history" element="NULL" name="x_365037_expense_m_transaction_history" parent="NULL" relationship="NULL" sys_domain="global" view="0364255adb927300e70758b3ca961971">2ef5a59adb927300e70758b3ca961971</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-29 18:20:27</sys_created_on>
+            <sys_id>2ef5a99adb927300e70758b3ca9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-29 18:20:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>comment</element>
+            <list_id display_value="x_365037_expense_m_transaction_history" element="NULL" name="x_365037_expense_m_transaction_history" parent="NULL" relationship="NULL" sys_domain="global" view="0364255adb927300e70758b3ca961971">2ef5a59adb927300e70758b3ca961971</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-29 18:20:27</sys_created_on>
+            <sys_id>aef5a99adb927300e70758b3ca9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-29 18:20:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_365037_expense_m_transaction_history</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-29 18:20:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ef5a59adb927300e70758b3ca961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_365037_expense_m_transaction_history</sys_name>
+            <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+            <sys_update_name>sys_ui_list_x_365037_expense_m_transaction_history_RPT4364255adb927300e70758b3ca96196b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-29 18:20:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt4364255adb927300e70758b3ca96196b" name="RPT4364255adb927300e70758b3ca96196b">0364255adb927300e70758b3ca961971</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -23,7 +23,7 @@
         <omit_filters>true</omit_filters>
         <omit_if_empty>false</omit_if_empty>
         <omit_links>false</omit_links>
-        <omit_new_button>false</omit_new_button>
+        <omit_new_button>true</omit_new_button>
         <related_list/>
         <sys_class_name>sys_ui_list_control</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9eaf5781db9e3300e70758b3ca96198e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_365037_expense_m_transaction_history</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -39,6 +39,6 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_ui_list_control_9eaf5781db9e3300e70758b3ca96198e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-26 05:59:47</sys_updated_on>
+        <sys_updated_on>2019-07-01 09:42:52</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

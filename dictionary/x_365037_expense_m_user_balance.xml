@@ -4,6 +4,7 @@
         <element label="DOB" mandatory="true" max_length="40" name="dob" type="glide_date"/>
         <element label="Email" max_length="50" name="email" type="string"/>
         <element default="0" label="Group Amount" max_length="20" name="group_amount" type="decimal"/>
+        <element default="true" label="isActive" max_length="40" name="isactive" type="boolean"/>
         <element choice="3" label="isAdmin" max_length="50" name="isadmin" type="choice">
             <choice>
                 <element inactive_on_update="false"/>

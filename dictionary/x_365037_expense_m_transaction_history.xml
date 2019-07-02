@@ -14,6 +14,8 @@
         <element label="Paid By" max_length="40" name="from_user" reference="x_365037_expense_m_user_balance" type="reference"/>
         <element label="Paid for Group" max_length="40" name="group_paid" type="boolean"/>
         <element label="Pay To Group" max_length="40" name="group_pay" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="TRX ID" max_length="40" name="number" type="string"/>
+        <element label="Reference TRX ID" max_length="50" name="reference_trx_id" type="string"/>
         <element choice="1" default="NONE" label="Status" max_length="10" name="status" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Approved" value="Approved"/>
@@ -22,7 +24,17 @@
             </choice>
         </element>
         <element label="Paid To" max_length="50" name="to_user" reference="x_365037_expense_m_user_balance" reference_key="user_name" type="reference"/>
+        <element choice="3" default="Personal Transaction" label="Transaction Type" max_length="40" name="transaction_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Group Contribution" value="Group Contribution"/>
+                <element inactive_on_update="false" label="Group Expense" value="Group Expense"/>
+                <element inactive_on_update="false" label="Personal Transaction" value="Personal Transaction"/>
+            </choice>
+        </element>
+        <element label="TRX Date" mandatory="true" max_length="40" name="trx_date" type="glide_date_time"/>
+        <element label="Using Group Balance" max_length="40" name="u_boolean_1" type="boolean"/>
         <element default="0" label="Amount" max_length="15" name="u_decimal_2" type="decimal"/>
         <element label="Receipt" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Split into" max_length="1024" name="u_glide_list_2" reference="x_365037_expense_m_user_balance" type="glide_list"/>
     </element>
 </database>

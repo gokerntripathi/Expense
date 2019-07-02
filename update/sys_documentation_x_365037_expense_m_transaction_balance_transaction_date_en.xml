@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="transaction_date" label="Transaction Date" language="en" table="x_365037_expense_m_transaction_balance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>transaction_date</element>
+            <help/>
+            <hint/>
+            <label>Transaction Date</label>
+            <language>en</language>
+            <name>x_365037_expense_m_transaction_balance</name>
+            <plural>Transaction Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-01 17:39:29</sys_created_on>
+            <sys_id>0ecf27badb963300e70758b3ca96195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Transaction Date</sys_name>
+            <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+            <sys_update_name>sys_documentation_x_365037_expense_m_transaction_balance_transaction_date_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-01 17:39:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
