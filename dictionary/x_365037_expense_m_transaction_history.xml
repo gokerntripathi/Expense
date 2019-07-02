@@ -16,6 +16,7 @@
         <element label="Pay To Group" max_length="40" name="group_pay" type="boolean"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="TRX ID" max_length="40" name="number" type="string"/>
         <element label="Reference TRX ID" max_length="50" name="reference_trx_id" type="string"/>
+        <element default="true" label="Split in All" max_length="40" name="split_in_all" type="boolean"/>
         <element choice="1" default="NONE" label="Status" max_length="10" name="status" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Approved" value="Approved"/>
@@ -32,6 +33,7 @@
             </choice>
         </element>
         <element label="TRX Date" mandatory="true" max_length="40" name="trx_date" type="glide_date_time"/>
+        <element label="New Audio" mandatory="true" max_length="40" name="u_audio_2" type="audio"/>
         <element label="Using Group Balance" max_length="40" name="u_boolean_1" type="boolean"/>
         <element default="0" label="Amount" max_length="15" name="u_decimal_2" type="decimal"/>
         <element label="Receipt" max_length="40" name="u_file_attachment_1" type="file_attachment"/>

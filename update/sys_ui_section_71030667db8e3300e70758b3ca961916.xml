@@ -4,13 +4,13 @@
             <element>transaction_type</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>9277408bdbd63300e70758b3ca96191a</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>1b71620fdb123300e70758b3ca9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>1677408bdbd63300e70758b3ca96191a</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>9b71620fdb123300e70758b3ca9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_boolean_1</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>9677408bdbd63300e70758b3ca96191a</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>1f71620fdb123300e70758b3ca9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.end_split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>1a77408bdbd63300e70758b3ca96191a</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>9f71620fdb123300e70758b3ca9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.begin_split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>9a77408bdbd63300e70758b3ca96191a</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>1371620fdb123300e70758b3ca9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>from_user</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>1e77408bdbd63300e70758b3ca96191a</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>9371620fdb123300e70758b3ca9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>u_decimal_2</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>9e77408bdbd63300e70758b3ca96191a</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>1771620fdb123300e70758b3ca9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>category</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>1277408bdbd63300e70758b3ca96191b</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>9771620fdb123300e70758b3ca9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>comment</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>9277408bdbd63300e70758b3ca96191b</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>1b71620fdb123300e70758b3ca9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,55 +130,69 @@
             <element>.split</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>1677408bdbd63300e70758b3ca96191b</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>9b71620fdb123300e70758b3ca9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_glide_list_2</element>
+            <element>split_in_all</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>9677408bdbd63300e70758b3ca96191b</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>1f71620fdb123300e70758b3ca9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_glide_list_2</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>9f71620fdb123300e70758b3ca9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>trx_date</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>1a77408bdbd63300e70758b3ca96191b</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>1371620fdb123300e70758b3ca9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>12</position>
+            <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-07-01 19:23:00</sys_created_on>
-            <sys_id>9a77408bdbd63300e70758b3ca96191b</sys_id>
+            <sys_created_on>2019-07-02 06:35:54</sys_created_on>
+            <sys_id>9371620fdb123300e70758b3ca9619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="New Section" display_value="New Section" name="x_365037_expense_m_transaction_history" sys_domain="global" view="Default view">71030667db8e3300e70758b3ca961916</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-07-01 19:23:00</sys_updated_on>
+            <sys_updated_on>2019-07-02 06:35:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
