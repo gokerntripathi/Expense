@@ -5,13 +5,13 @@
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
-        <bar_unstack>true</bar_unstack>
+        <bar_unstack>false</bar_unstack>
         <chart_background_color/>
         <chart_border_color/>
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
-        <chart_size>large</chart_size>
+        <chart_size>medium</chart_size>
         <chart_subtitle/>
         <chart_subtitle_color/>
         <chart_subtitle_size>14</chart_subtitle_size>
@@ -42,9 +42,11 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>from_user.user_name</field>
+        <field>from_user</field>
         <field_list>number,opened_at,short_description,caller_id,priority,state,category,assignment_group,assigned_to,sys_updated_on,sys_updated_by</field_list>
-        <filter table="x_365037_expense_m_transaction_history">from_user.user_nameNOT LIKEExpenseGroupUser<item endquery="false" field="from_user.user_name" goto="false" newquery="false" operator="NOT LIKE" or="false" value="ExpenseGroupUser"/>
+        <filter table="x_365037_expense_m_transaction_history">from_user.user_nameNOT LIKEExpenseGroupUser^status=Approved^ORDERBYfrom_user<item endquery="false" field="from_user.user_name" goto="false" newquery="false" operator="NOT LIKE" or="false" value="ExpenseGroupUser"/>
+            <item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Approved"/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="from_user"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -103,21 +105,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-21 19:26:27</sys_created_on>
         <sys_id>5f58287fdb067300e70758b3ca961907</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Expense User Group Balance</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_report_5f58287fdb067300e70758b3ca961907</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-03 18:47:11</sys_updated_on>
+        <sys_updated_by>gokern.tripathi</sys_updated_by>
+        <sys_updated_on>2019-07-04 11:35:49</sys_updated_on>
         <table>x_365037_expense_m_transaction_history</table>
         <title>Expense User Group Balance</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
         <trend_field/>
-        <type>bar</type>
+        <type>pie</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_null_in_trend>false</use_null_in_trend>

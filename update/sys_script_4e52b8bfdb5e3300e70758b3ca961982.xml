@@ -12,10 +12,11 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_365037_expense_m_transaction_history</collection>
-        <condition>current.reference_trx_id == ''</condition>
+        <condition>current.reference_trx_id == '' || (current.reference_trx_id != '' &amp;&amp; current.transaction_type == 'Group Contribution')</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_365037_expense_m_transaction_history">status=Approved^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Approved"/>
+        <filter_condition table="x_365037_expense_m_transaction_history">status=Approved^ORstatus=Rejected^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Approved"/>
+            <item endquery="false" field="status" goto="false" newquery="false" operator="=" or="true" value="Rejected"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -30,39 +31,82 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+// Add your code here
+   //gs.addInfoMessage('hey its called');
 
-	// Add your code here
-    //gs.addInfoMessage('hey its called');
-    
-    var refId = current.number;
-    var refID2=current.reference_trx_id;
-    gs.addInfoMessage(refId);
-    
-    var gr = new GlideRecord('x_365037_expense_m_transaction_history');
-    gr.addQuery('reference_trx_id',refId);
-	gr.addQuery('transaction_type','Group Expense');
-    gr.query();
-    while(gr.hasNext()){
-        //gs.addInfoMessage('it came inside block');
-        gr.next();
-        var st = 'Approved';
-        gr.setValue('status',st);
-        gr.update();
+   var refId = current.number;
+   var refID2=current.reference_trx_id;
+  // gs.addInfoMessage(refId);
+   if(current.reference_trx_id == ''){
+        
+        //case 1 : if it is group contribution
+        if(current.transaction_type=='Group Contribution'){
+            var gr = new GlideRecord('x_365037_expense_m_transaction_history');
+            gr.addQuery('reference_trx_id',refId);
+            gr.addQuery('transaction_type','Group Contribution');
+            gr.query();
+            while(gr.hasNext()){
+                //gs.addInfoMessage('it came inside block');
+                gr.next();
+                var st = current.status;
+                gr.setValue('status',st);
+                gr.update();
+            }
+			
+			//updating paid status for the user
+			var gp = new GlideRecord('x_365037_expense_m_expense_notification');
+			//gs.addInfoMessage(current.from_user.email);
+            gp.addQuery('email',current.from_user.email);
+            gp.addQuery('status','Unpaid');
+            gp.query();
+			
+			while(gp.hasNext()){
+				
+				gp.next();
+				var reference=gp.getValue('reference');
+				
+				var contains=current.comment.indexOf(reference);
+				//gs.addInfoMessage('inside while loop with reference value as ' + reference + '   '+contains);
+				if(contains==-1){
+					
+				}else{
+					gs.addInfoMessage('inside else block');
+					gp.setValue('status','Paid');
+					gp.update();
+				}
+			}
     }
-	
-	if(current.transaction_type=='Group Contribution'){
-		gs.addInfoMessage('in group contribution');
-		var gr = new GlideRecord('x_365037_expense_m_transaction_history');
-		gr.addQuery('reference_trx_id',refId);
-		gr.query();
-		while(gr.hasNext()){
-			//gs.addInfoMessage('it came inside block');
-			gr.next();
-			var st = 'Approved';
-			gr.setValue('status',st);
-			gr.update();
-		}
-	}
+    else{
+        var gr2 = new GlideRecord('x_365037_expense_m_transaction_history');
+        gr2.addQuery('reference_trx_id',refId);
+		//check once.
+        //gr2.addQuery('transaction_type','Group Expense');
+        gr2.query();
+        while(gr2.hasNext()){
+            //gs.addInfoMessage('it came inside block');
+            gr2.next();
+            var st2 = current.status;
+            gr2.setValue('status',st2);
+            gr2.update();
+        }
+        }
+    }
+    else{
+    if(current.transaction_type=='Group Contribution'){
+        //gs.addInfoMessage('in group contribution');
+        var gr1 = new GlideRecord('x_365037_expense_m_transaction_history');
+        gr1.addQuery('reference_trx_id',refID2);
+        gr1.addQuery('transaction_type','Group Contribution');
+        gr1.query();
+        while(gr1.hasNext()){
+            //gs.addInfoMessage('it came inside block');
+            gr1.next();
+            var st1 = current.status;
+            gr1.setValue('status',st1);
+            gr1.update();
+        }
+    }
+    }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -71,7 +115,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4e52b8bfdb5e3300e70758b3ca961982</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>update status field of all references</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -79,7 +123,7 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_script_4e52b8bfdb5e3300e70758b3ca961982</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-04 07:35:55</sys_updated_on>
+        <sys_updated_on>2019-07-04 14:40:03</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

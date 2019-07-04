@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
-        <additional_groupby/>
+        <additional_groupby>status</additional_groupby>
         <aggregate>COUNT</aggregate>
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
@@ -42,10 +42,10 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field/>
-        <field_list>number,from_user,u_decimal_2,category,status,reference_trx_id,comment</field_list>
-        <filter table="x_365037_expense_m_transaction_history">status=Pending^from_user.user_name=javascript:gs.getUserName()<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Pending"/>
-            <item endquery="false" field="from_user.user_name" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
+        <field>reference</field>
+        <field_list>reference,email,status</field_list>
+        <filter table="x_365037_expense_m_expense_notification">referenceISNOTEMPTY^status=Unpaid<item endquery="false" field="reference" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Unpaid"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -102,18 +102,18 @@
         <sumfield/>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-29 18:13:40</sys_created_on>
-        <sys_id>4364255adb927300e70758b3ca96196b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>My Request</sys_name>
+        <sys_created_on>2019-07-04 13:34:44</sys_created_on>
+        <sys_id>0284127bdb927300e70758b3ca96191f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Unpaid users</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
-        <sys_update_name>sys_report_4364255adb927300e70758b3ca96196b</sys_update_name>
+        <sys_update_name>sys_report_0284127bdb927300e70758b3ca96191f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-04 09:09:37</sys_updated_on>
-        <table>x_365037_expense_m_transaction_history</table>
-        <title>My Request</title>
+        <sys_updated_on>2019-07-04 13:42:44</sys_updated_on>
+        <table>x_365037_expense_m_expense_notification</table>
+        <title>Unpaid users</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>

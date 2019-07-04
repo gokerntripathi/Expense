@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Send Remainder mail</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-07-04 14:23:20</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var gp = new GlideRecord('x_365037_expense_m_expense_notification');
+gp.addQuery('status','Unpaid');
+gp.query();
+
+while(gp.next()){
+	gs.addInfoMessage(gp.email+'   '+gp.reference);
+	gs.eventQueue("x_365037_expense_m.UnpaidExpense",gp, gp.email,gp.reference);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-04 14:30:16</sys_created_on>
+        <sys_id>f1af5273dbd27300e70758b3ca961979</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Send Remainder mail</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sysauto_script_f1af5273dbd27300e70758b3ca961979</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-04 14:36:26</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

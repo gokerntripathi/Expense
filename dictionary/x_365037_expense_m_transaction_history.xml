@@ -12,7 +12,7 @@
             </choice>
         </element>
         <element label="Remarks" max_length="100" name="comment" type="string"/>
-        <element default="javascript:gs.getUserName()" label="Paid By" mandatory="true" max_length="50" name="from_user" reference="x_365037_expense_m_user_balance" reference_key="user_name" type="reference"/>
+        <element default="javascript:gs.getUserName()" label="Paid By" mandatory="true" max_length="50" name="from_user" read_only="true" reference="x_365037_expense_m_user_balance" reference_key="user_name" type="reference"/>
         <element label="Paid for Group" max_length="40" name="group_paid" type="boolean"/>
         <element label="Pay To Group" max_length="40" name="group_pay" type="boolean"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="TRX ID" max_length="40" name="number" type="string"/>

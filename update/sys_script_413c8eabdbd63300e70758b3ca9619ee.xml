@@ -51,6 +51,7 @@
 			transHistoryRecord.setValue('email', gr.getValue('email'));
             transHistoryRecord.setValue('subject', current.subject);
             transHistoryRecord.setValue('email_content', current.email_content);
+			transHistoryRecord.setValue('reference',current.number);
 			transHistoryRecord.insert();
 		}
 		
@@ -69,6 +70,7 @@
 				transHistoryRecord1.setValue('email', gp.getValue('email'));
 				transHistoryRecord1.setValue('subject', current.subject);
 				transHistoryRecord1.setValue('email_content', current.email_content);
+				transHistoryRecord1.setValue('reference',current.number);
 				transHistoryRecord1.insert();
 	
 			}
@@ -86,7 +88,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>413c8eabdbd63300e70758b3ca9619ee</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>EmailUpdateForNotification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -94,7 +96,7 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_script_413c8eabdbd63300e70758b3ca9619ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-03 18:33:06</sys_updated_on>
+        <sys_updated_on>2019-07-04 13:02:04</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

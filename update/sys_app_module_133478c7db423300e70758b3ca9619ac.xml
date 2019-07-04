@@ -5,9 +5,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_365037_expense_m_user_balance">user_nameLIKEjavascript:gs.getUserName()^EQ<item endquery="false" field="user_name" goto="false" newquery="false" operator="LIKE" or="false" value="javascript:gs.getUserName()"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter>
+        <filter/>
         <hint/>
         <homepage/>
         <image/>
@@ -27,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>133478c7db423300e70758b3ca9619ac</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>User Balances</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -35,7 +33,7 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_app_module_133478c7db423300e70758b3ca9619ac</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-28 07:22:34</sys_updated_on>
+        <sys_updated_on>2019-07-04 08:47:02</sys_updated_on>
         <timeline_page/>
         <title>User Balances</title>
         <uncancelable>false</uncancelable>

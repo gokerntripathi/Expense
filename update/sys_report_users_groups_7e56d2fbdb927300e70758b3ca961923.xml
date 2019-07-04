@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Unpaid users">0284127bdb927300e70758b3ca96191f</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-04 13:42:43</sys_created_on>
+        <sys_id>7e56d2fbdb927300e70758b3ca961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0284127bdb927300e70758b3ca96191f</sys_name>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_report_users_groups_7e56d2fbdb927300e70758b3ca961923</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-04 13:42:43</sys_updated_on>
+        <user_id display_value="Gokern Tripathi">b5a833afdb827300e70758b3ca9619a1</user_id>
+    </sys_report_users_groups>
+</record_update>
