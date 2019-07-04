@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>(current.status=='Pending'  &amp;&amp; (current.to_user==gs.getUserName() || ((current.group_pay==true || current.group_paid==true) &amp;&amp;gs.hasRole("x_365037_expense_m.Expense Admin Role")) ) )</condition>
+        <condition>current.status=='Pending' &amp;&amp;((current.transaction_type=='Group Expense' &amp;&amp; current.reference_trx_id=='')||(current.transaction_type=='Group Contribution' &amp;&amp; current.from_user.user_name !='ExpenseGroupUser')) &amp;&amp; current.approved_by==gs.getUserName() </condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -40,7 +40,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>00b86117dbc23300e70758b3ca9619d9</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Reject</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -48,7 +48,7 @@ current.update();]]></script>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_ui_action_00b86117dbc23300e70758b3ca9619d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-24 06:34:27</sys_updated_on>
+        <sys_updated_on>2019-07-04 07:07:51</sys_updated_on>
         <table>x_365037_expense_m_transaction_history</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

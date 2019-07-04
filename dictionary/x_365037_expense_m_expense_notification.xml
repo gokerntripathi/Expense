@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Expense Notification" max_length="40" name="x_365037_expense_m_expense_notification" type="collection">
+        <element label="Email" max_length="100" name="email" type="string"/>
+        <element label="Email Content" max_length="4000" name="email_content" type="html"/>
+        <element label="Send To" max_length="4000" name="send_to" reference="x_365037_expense_m_user_balance" reference_qual="isactive=true^EQ" reference_qual_condition="isactive=true^EQ" type="glide_list"/>
+        <element label="Send to all" max_length="40" name="send_to_all" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Subject" mandatory="true" max_length="50" name="subject" type="string"/>
+    </element>
+</database>

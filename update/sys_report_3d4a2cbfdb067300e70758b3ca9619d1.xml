@@ -44,8 +44,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>category</field>
         <field_list>number,opened_at,short_description,caller_id,priority,state,category,assignment_group,assigned_to,sys_updated_on,sys_updated_by</field_list>
-        <filter table="x_365037_expense_m_transaction_history">status=Approved^category!=Personal^sys_created_onRELATIVEGE@quarter@ago@1^category!=Group Contribution<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Approved"/>
-            <item endquery="false" field="category" goto="false" newquery="false" operator="!=" or="false" value="Personal"/>
+        <filter table="x_365037_expense_m_transaction_history">status=Approved^sys_created_onRELATIVEGE@quarter@ago@1^category!=Group Contribution<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Approved"/>
             <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="RELATIVE" or="false" value="GE@quarter@ago@1"/>
             <item endquery="false" field="category" goto="false" newquery="false" operator="!=" or="false" value="Group Contribution"/>
         </filter>
@@ -106,14 +105,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-21 19:34:49</sys_created_on>
         <sys_id>3d4a2cbfdb067300e70758b3ca9619d1</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Group Expense Category Report</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_report_3d4a2cbfdb067300e70758b3ca9619d1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-26 10:42:50</sys_updated_on>
+        <sys_updated_on>2019-07-03 18:51:47</sys_updated_on>
         <table>x_365037_expense_m_transaction_history</table>
         <title>Group Expense Category Report</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

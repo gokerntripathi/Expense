@@ -42,9 +42,10 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>user_name</field>
+        <field>from_user.user_name</field>
         <field_list>number,opened_at,short_description,caller_id,priority,state,category,assignment_group,assigned_to,sys_updated_on,sys_updated_by</field_list>
-        <filter/>
+        <filter table="x_365037_expense_m_transaction_history">from_user.user_nameNOT LIKEExpenseGroupUser<item endquery="false" field="from_user.user_name" goto="false" newquery="false" operator="NOT LIKE" or="false" value="ExpenseGroupUser"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -97,20 +98,20 @@
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield>group_amount</sumfield>
+        <sumfield>u_decimal_2</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-21 19:26:27</sys_created_on>
         <sys_id>5f58287fdb067300e70758b3ca961907</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Expense User Group Balance</sys_name>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
         <sys_policy/>
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_report_5f58287fdb067300e70758b3ca961907</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-01 06:38:18</sys_updated_on>
-        <table>x_365037_expense_m_user_balance</table>
+        <sys_updated_on>2019-07-03 18:47:11</sys_updated_on>
+        <table>x_365037_expense_m_transaction_history</table>
         <title>Expense User Group Balance</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>

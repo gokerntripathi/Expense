@@ -40,7 +40,45 @@
 	gr.user_name=current.user.user_name;
 	gr.email=current.user.email;
 	gr.balance_amount=0;
-	gr.insert();
+	var uRole = new GlideRecord('sys_user_has_role');
+    //uRole.addQuery('user',)
+    uRole.query();
+    while(uRole.hasNext()){
+        uRole.next();
+        //gs.addInfoMessage(uRole.getValue('user'));
+        //gs.addInfoMessage(uRole.getValue('role'));
+        //gs.addInfoMessage(current.user);
+        if(uRole.getValue('user') == current.user){
+            //gs.addInfoMessage("hey same");
+            //gs.addInfoMessage(uRole.getValue('role').name);
+            
+            var gg = new GlideRecord('sys_user_role');
+            gg.addQuery('sys_id',uRole.getValue('role'));
+            gg.query();
+            while(gg.hasNext()){
+                gg.next();
+                //gs.addInfoMessage(gg.getValue('name'));
+                var roleName = gg.getValue('name');
+                if(roleName == 'x_365037_expense_m.super admin role'){
+                    //super admin
+                    gr.role_type = 'Super Admin';
+                }
+                else if(roleName == 'x_365037_expense_m.Expense Admin Role'){
+                    //admin
+                    gr.role_type = 'Admin';
+                }
+                else{
+                    //regular user.
+                    //gr.role_type = 'None';
+                }
+            }
+        }
+        
+        
+    }
+    
+    
+    gr.insert();
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -49,7 +87,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cdf5b667db027300e70758b3ca961948</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Add To Custom User Table</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -57,7 +95,7 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_script_cdf5b667db027300e70758b3ca961948</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-26 06:36:48</sys_updated_on>
+        <sys_updated_on>2019-07-04 05:42:29</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

@@ -15,7 +15,9 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_365037_expense_m_transaction_history">statusNOT INApproved,Pending,Rejected^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="NOT IN" or="false" value="Approved,Pending,Rejected"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>Update Status while raising the expense</name>
@@ -38,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76866993dbc23300e70758b3ca9619aa</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Update Status while raising the expense</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -46,7 +48,7 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_script_76866993dbc23300e70758b3ca9619aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-20 19:06:08</sys_updated_on>
+        <sys_updated_on>2019-07-02 12:42:41</sys_updated_on>
         <template>status=Pending^EQ</template>
         <when>before</when>
     </sys_script>

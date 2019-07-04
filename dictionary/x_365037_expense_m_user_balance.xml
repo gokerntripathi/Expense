@@ -11,6 +11,7 @@
                 <element inactive_on_update="false" label="true" value="true"/>
             </choice>
         </element>
+        <element default="None" label="Role Type" max_length="50" name="role_type" read_only="true" type="string"/>
         <element display="true" label="User Name" max_length="50" name="user_name" type="string"/>
         <index name="index">
             <element name="user_name"/>

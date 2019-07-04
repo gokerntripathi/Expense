@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_decimal_2</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Expense Amount validation</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   var amount=g_form.getValue('u_decimal_2');
+	if(amount<=0){
+		g_form.addErrorMessage('amount should be greater than zero');
+		return false;
+	}
+	
+	var transaction_type=g_form.getValue('transaction_type');
+	if(transaction_type!='Group Contribution'){
+		var splitAll=g_form.getValue('split_in_all');
+		var splitInto=g_form.getValue('u_glide_list_2');
+		alert(splitInto.length +'   '+ splitAll);
+		if(splitInto.length > 0  || splitAll =='true'){
+			//alert()
+		}else{
+			g_form.addErrorMessage('please select users to split the amount');
+			return false;
+		}
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-02 18:43:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5d7c557dbd63300e70758b3ca961960</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Expense Amount validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
+        <sys_update_name>sys_script_client_b5d7c557dbd63300e70758b3ca961960</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-02 20:04:15</sys_updated_on>
+        <table>x_365037_expense_m_transaction_history</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

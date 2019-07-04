@@ -13,33 +13,19 @@
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
 	if(g_form.isNewRecord()){
-		g_form.setValue('from_user',g_user.userID,g_user.getUserName());
-		g_form.isMandatory('u_decimal_2',true);
-		g_form.setReadOnly('category',true);
-		alert('before user balance call');
-		
-		/*var feature = new GlideRecord('x_365037_expense_m_user_balance');
-	   //feature.addQuery('isAdmin','true');
-	   feature.query();
-		
-		alert('after user balance call' + feature.hasNext());
-	   var featureIds = '';
-	    while (feature.next()) {
-		   alert('inside while');
-		   featureIds += feature.user_name + ',';
-		   alert(featureIds);
-	   }
-	   g_form.setValue('u_glide_list_2', featureIds);
-		
-		alert(g_form.getValue('u_glide_list_2'));*/
-		
+		//g_form.setValue('from_user',g_user,g_user.userName);
+		//g_form.setValue()
+		//g_form.setReadOnly('from_user',true);
 	}else{
-		g_form.setReadOnly('group_paid',true);
+		//g_form.setReadOnly('group_paid',true);
 		g_form.setReadOnly('from_user',true);
-		g_form.setReadOnly('to_user',true);
+		g_form.setReadOnly('split_in_all',true);
 		g_form.setReadOnly('u_decimal_2',true);
 		g_form.setReadOnly('category',true);
-		g_form.setReadOnly('group_pay',true);
+		g_form.setReadOnly('transaction_type',true);
+		g_form.setReadOnly('trx_date',true);
+		g_form.setReadOnly('u_glide_list_2',true);
+		g_form.setReadOnly('u_boolean_1',true);
 	}
 	
 }]]></script>
@@ -49,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a8b8193db823300e70758b3ca9619b6</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>Update Expense Paid User</sys_name>
         <sys_overrides/>
         <sys_package display_value="Expense Management" source="x_365037_expense_m">0b071443db023300e70758b3ca961957</sys_package>
@@ -57,7 +43,7 @@
         <sys_scope display_value="Expense Management">0b071443db023300e70758b3ca961957</sys_scope>
         <sys_update_name>sys_script_client_3a8b8193db823300e70758b3ca9619b6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-01 20:48:38</sys_updated_on>
+        <sys_updated_on>2019-07-03 17:41:15</sys_updated_on>
         <table>x_365037_expense_m_transaction_history</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

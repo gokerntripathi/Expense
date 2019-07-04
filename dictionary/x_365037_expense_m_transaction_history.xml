@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Transaction" max_length="40" name="x_365037_expense_m_transaction_history" type="collection">
+        <element label="approval by" max_length="40" name="approved_by" read_only="true" type="string"/>
         <element choice="3" default="Personal" label="Category" max_length="20" name="category" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Birthday Celebration" value="Birthday"/>
@@ -11,7 +12,7 @@
             </choice>
         </element>
         <element label="Remarks" max_length="100" name="comment" type="string"/>
-        <element label="Paid By" max_length="40" name="from_user" reference="x_365037_expense_m_user_balance" type="reference"/>
+        <element default="javascript:gs.getUserName()" label="Paid By" mandatory="true" max_length="50" name="from_user" reference="x_365037_expense_m_user_balance" reference_key="user_name" type="reference"/>
         <element label="Paid for Group" max_length="40" name="group_paid" type="boolean"/>
         <element label="Pay To Group" max_length="40" name="group_pay" type="boolean"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="TRX ID" max_length="40" name="number" type="string"/>
@@ -25,18 +26,16 @@
             </choice>
         </element>
         <element label="Paid To" max_length="50" name="to_user" reference="x_365037_expense_m_user_balance" reference_key="user_name" type="reference"/>
-        <element choice="3" default="Personal Transaction" label="Transaction Type" max_length="40" name="transaction_type" type="choice">
+        <element choice="3" default="Group Contribution" label="Transaction Type" max_length="40" name="transaction_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Group Contribution" value="Group Contribution"/>
-                <element inactive_on_update="false" label="Group Expense" value="Group Expense"/>
-                <element inactive_on_update="false" label="Personal Transaction" value="Personal Transaction"/>
+                <element inactive_on_update="false" label="Group Contribution" sequence="0" value="Group Contribution"/>
+                <element inactive_on_update="false" label="Group Expense" sequence="1" value="Group Expense"/>
             </choice>
         </element>
         <element label="TRX Date" mandatory="true" max_length="40" name="trx_date" type="glide_date_time"/>
-        <element label="New Audio" mandatory="true" max_length="40" name="u_audio_2" type="audio"/>
         <element label="Using Group Balance" max_length="40" name="u_boolean_1" type="boolean"/>
-        <element default="0" label="Amount" max_length="15" name="u_decimal_2" type="decimal"/>
+        <element default="0" label="Amount" mandatory="true" max_length="15" name="u_decimal_2" type="decimal"/>
         <element label="Receipt" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
-        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Split into" max_length="1024" name="u_glide_list_2" reference="x_365037_expense_m_user_balance" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Split into" max_length="1024" name="u_glide_list_2" reference="x_365037_expense_m_user_balance" reference_qual="isactive=true^EQ" reference_qual_condition="isactive=true^EQ" type="glide_list"/>
     </element>
 </database>
